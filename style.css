@@ -1,0 +1,94 @@
+:root {
+    --light-blue: #cdd8de;
+    --light-brown: #6c5a3e;
+    --hiking-green: #a39137;
+    --dark-brown: #3f3337;
+    --flesh: #c4846c;
+}
+
+/* element selectors */
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sintony', sans-serif;
+}
+
+/* class selectors */
+
+.bg-dog {
+    background-image: url(https://images.unsplash.com/photo-1597330223703-9b11c4dba2bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-text-box {
+    background-color: #3f33379b;
+
+}
+
+.main-shadow {
+    box-shadow: .5px .5px 7px var(--dark-brown);
+}
+
+.text-light-blue {
+    color: var(--light-blue)
+}
+
+.text-light-brown {
+    color: var(--light-brown)
+}
+
+.text-hiking-green {
+    color: var(--hiking-green)
+}
+
+.text-dark-brown {
+    color: var(--dark-brown)
+}
+
+.text-flesh {
+    color: var(--flesh)
+}
+
+.bg-light-brown {
+    background-color: var(--light-brown);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-hiking-green {
+    background-color: var(--hiking-green);
+}
+
+.bg-dark-brown {
+    background-color: var(--dark-brown);
+}
+
+.bg-flesh {
+    background-color: var(--flesh);
+}
+
+
+
+
+/* media quires */
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) {
+
+    .card-spill {
+        transform: translateY(7vh);
+    }
+
+}

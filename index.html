@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sintony:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+        integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hiking Dog</title>
+</head>
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="">
+    <header class="bg-dark-brown sticky-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mdi mdi-dog text-flesh logo"> Hiking Dog</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <!-- Top Section -->
+        <div class="container-fluid py-5 bg-dog ">
+            <div class="row">
+                <div class=" col-12 col-md-4 p-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="text-light-blue img-text-box rounded m-3 p-3 text-center">Let a dog take you on a
+                                hike</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="bg-light-blue m-3 p-3 rounded">
+                                <h3>Sign up here!</h3>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Notes about your
+                                        hike <br>(skill-level, dates, length of hike etc.)</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn bg-flesh">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- text needs to go away on mobile -->
+                <div class="d-none d-md-block col-md-7 py-5 ">
+                    <div class="text-light-blue img-text-box rounded m-5 p-5">
+                        <h1>A dog taking <em>you</em> on a hike?</h1>
+                        <p>Our research shows that you will have more fun letting one our of trained dogs guide you on a
+                            hike. We have all types of dogs for all types of people, and we can accommodate any level of
+                            hiker. From beginner to expert we know that you and our dog will have a great time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Section with image overspill -->
+        <div class="container-fluid bg-light-brown d-flex align-items-center">
+            <div class="row">
+                <div class="order-2 order-md-1 col-12 col-md-5 p-5 text-light-blue">
+                    <h3>Text Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloribus ipsa iste placeat
+                        repudiandae provident id incidunt labore voluptate animi.</p>
+                </div>
+                <div
+                    class="order-1 order-md-2 col-12 col-md-7 p-3 my-3 card text-dark-brown bg-hiking-green card-spill">
+                    <div class="row p-3">
+                        <div class="col-2 py-2">
+                            <i class="mdi mdi-dog-side fs-1 text-center text-light-blue"></i>
+                        </div>
+                        <div class="col-10 py-2 d-flex align-items-center">
+                            <h4>DOG SERVICE</h4>
+                        </div>
+                        <div class="col-2 py-2">
+                            <i class="mdi mdi-dog-side fs-1 text-center text-light-blue"></i>
+                        </div>
+                        <div class="col-10 py-2 d-flex align-items-center">
+                            <h4>DOG SERVICE</h4>
+                        </div>
+                        <div class="col-2 py-2">
+                            <i class="mdi mdi-dog-side fs-1 text-center text-light-blue"></i>
+                        </div>
+                        <div class="col-10 py-2 d-flex align-items-center">
+                            <h4>DOG SERVICE</h4>
+                        </div>
+                        <div class="col-2 py-2">
+                            <i class="mdi mdi-dog-side fs-1 text-center text-light-blue"></i>
+                        </div>
+                        <div class="col-10 py-2 d-flex align-items-center">
+                            <h4>DOG SERVICE</h4>
+                        </div>
+                        <div class="col-2 py-2">
+                            <i class="mdi mdi-dog-side fs-1 text-center text-light-blue"></i>
+                        </div>
+                        <div class="col-10 py-2 d-flex align-items-center">
+                            <h4>DOG SERVICE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Section with image -->
+        <div class="container-fluid bg-light-blue">
+            <div class="row">
+                <div class="col-12 col-md-3 py-4">
+                    <img class="img-fluid p-1"
+                        src="https://images.unsplash.com/photo-1535058486413-342ae9ffb752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="dog-hiking">
+                </div>
+                <div class="col-12 col-md-9 py-3 d-flex flex-column justify-content-center pt-5">
+                    <h2 class="text-dark-brown"><i class="mdi mdi-dog fs-1 text-flesh"> </i> Why you should hike with
+                        our dogs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil nostrum totam. Eius
+                        beatae aliquam cum non dignissimos iure aliquid est similique voluptatibus voluptate
+                        blanditiis vitae, a commodi, incidunt distinctio consectetur quidem excepturi
+
+                        esse quod tempore molesti </p>
+                    <button class="offset-7 col-3 btn bg-flesh align-end"> Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth Section with 3 cards -->
+        <div class="container-fluid bg-hiking-green">
+            <div class="row justify-content-around align-items-center">
+                <div class="order-3 order-md-1 col-11 col-md-3 card my-5 py-5 bg-light-blue text-dark-brown">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi necessitatibus nesciunt
+                        possimus deserunt doloremque
+                    </p>
+                    <h4>Gold star award from</h4>
+                    <h6>Gold Star</h6>
+                </div>
+                <div
+                    class="order-1 order-md-2 col-11 col-md-3 card my-5 py-5 bg-light-blue text-dark-brown main-shadow">
+                    <div class="d-flex justify-content-center">
+                        <i class="mdi mdi-star-outline fs-1 text-hiking-green"> </i>
+                        <i class="mdi mdi-star-outline fs-1 text-hiking-green"> </i>
+                        <i class="mdi mdi-star-outline fs-1 text-hiking-green"> </i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi necessitatibus nesciunt
+                        possimus deserunt doloremque
+                    </p>
+                    <h4>Gold star award from</h4>
+                    <h6>Gold Star</h6>
+                </div>
+                <div class="order-2 order-md-3 col-11 col-md-3 card my-5 py-5 bg-light-blue text-dark-brown">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi necessitatibus nesciunt
+                        possimus deserunt doloremque
+                    </p>
+                    <h4>Gold star award from</h4>
+                    <h6>Gold Star</h6>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <footer class="container-fluid">
+        <div class="row bg-dark-brown py-3">
+            <div class="col-12">
+                <h4 class="text-flesh">Follow all of our social media</h4>
+                <div class="text-hiking-green">
+                    <button class="mdi mdi-facebook btn bg-flesh m-1"> </button>
+                    <button class="mdi mdi-instagram btn bg-flesh m-1"> </button>
+                    <button class="mdi mdi-twitter btn bg-flesh m-1"> </button>
+                    <button class="mdi mdi-snapchat btn bg-flesh m-1"> </button>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light-brown text-light-blue py-2">
+            <div class="col-12">
+                <p class="mdi mdi-copyright text-center"> </i> <i class="mdi mdi-dog text-flesh"> </i> Hiking Dog
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
